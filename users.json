@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "age": 28,
+    "department": "Engineering"
+  },
+  {
+    "id": 2,
+    "name": "Bob Smith",
+    "age": 34,
+    "department": "Marketing"
+  },
+  {
+    "id": 3,
+    "name": "Charlie Davis",
+    "age": 25,
+    "department": "Design"
+  },
+  {
+    "id": 4,
+    "name": "Diana Prince",
+    "age": 31,
+    "department": "Sales"
+  }
+]
+
