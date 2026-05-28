@@ -28,11 +28,5 @@
         "name": "GG",
         "age": 20,
         "department": "ceo"
-    },
-    {
-        "id": 5,
-        "name": "GG",
-        "age": 20,
-        "department": "ceo"
     }
 ]
