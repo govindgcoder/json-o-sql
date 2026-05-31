@@ -50,7 +50,7 @@ class JSONDB:
                     self.is_valid(obj, col, condition)
                     for col, condition in conditions.items()
                 ):
-                    for key, val in new_vals:
+                    for key, val in new_vals.items():
                         obj[key] = val
             f.seek(0)
             f.truncate()
