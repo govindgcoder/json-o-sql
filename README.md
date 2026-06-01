@@ -98,9 +98,5 @@ All write operations follow the same sequence:
 
 ---
 
-### Roadmap
-
-* FastAPI interface exposing these operations as REST endpoints
-* SQL parser to translate raw SQL strings into the dict-based condition format
 
 
