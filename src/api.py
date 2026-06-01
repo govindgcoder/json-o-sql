@@ -28,3 +28,14 @@ class Filter(BaseModel):
 class UpdateRequest(BaseModel):
     new_vals: Dict[str, Any]
     conditions: List[Filter]
+
+
+@app.post("/update/")
+def updateDB_where(request: UpdateRequest):
+    result = DB.update_where(
+        new_vals=request.new_vals,
+        conditions={
+            f.field: {f.condition.sign: f.condition.value} for f in request.conditions
+        },
+    )
+    return {"status": "success" if result else "failure"}

@@ -13,7 +13,7 @@ class JSONDB:
     @staticmethod
     def is_valid(obj, col, condition):
         if obj.get(col) is None:
-            return False
+    return False
 
         sign, rhs = list(condition.items())[0]
         match sign:
@@ -55,6 +55,7 @@ class JSONDB:
             f.seek(0)
             f.truncate()
             json.dump(data, f, indent=4)
+        return True
 
     def delete_where(self, conditions):
         with open(self.path, "r+") as f:
