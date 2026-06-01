@@ -1,11 +1,10 @@
 # json-o-sql
+(Learning project)
+A Python-based JSON document store with SQL-like query operations. Processes JSON files using Python logic, mapped from SQL syntax, with a FastAPI interface.
 
-A Python-based JSON document store with SQL-like query operations. Processes JSON files using Python logic, mapped from SQL syntax, with a FastAPI interface on the roadmap.
+<img width="589" height="287" alt="image" src="https://github.com/user-attachments/assets/187c6b6e-1f43-44c9-b4a6-cb35a38f963e" />
 
 ---
-
-## Current Progress
-
 ### Core Engine (`src/engine.py`)
 
 The `JSONDB` class wraps a JSON file and provides CRUD operations using Python dictionaries to express SQL-like conditions.
