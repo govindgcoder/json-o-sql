@@ -15,13 +15,13 @@
         "id": 3,
         "name": "Charlie Davis",
         "age": 25,
-        "department": "Sales"
+        "department": "Normal Sales"
     },
     {
         "id": 4,
         "name": "Diana Prince",
         "age": 31,
-        "department": "Sales"
+        "department": "Normal Sales"
     },
     {
         "id": 5,
