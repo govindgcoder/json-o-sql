@@ -7,6 +7,8 @@ from typing import Any, Dict, List
 from fastapi import FastAPI
 from pydantic import BaseModel
 
+app = FastAPI()
+
 
 class UserData(BaseModel):
     id: int
@@ -38,4 +40,6 @@ def updateDB_where(request: UpdateRequest):
             f.field: {f.condition.sign: f.condition.value} for f in request.conditions
         },
     )
-    return {"status": "success" if result else "failure"}
+    if result:
+        return {"status": "success"}
+    return {"status": "failure"}

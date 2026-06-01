@@ -13,7 +13,7 @@ class JSONDB:
     @staticmethod
     def is_valid(obj, col, condition):
         if obj.get(col) is None:
-    return False
+            return False
 
         sign, rhs = list(condition.items())[0]
         match sign:
